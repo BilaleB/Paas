@@ -6,6 +6,8 @@
   become: true
   vars_files:
     - vars/default.yml
+  roles:
+    - community.mysql
 
   tasks:
     - name: Install prerequisites
